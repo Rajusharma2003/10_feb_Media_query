@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+/* list style */
+.list-item a{
+   text-decoration:none;
+}
+
+.ult-menu{
+    margin-top:-70px;
+    padding: 20px;
+    display: none;
+
+}
+.list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    margin: 30px 100px;
+    font-weight:500px ;
+}
+
+.list-item a:hover{
+    background-color: #4920b8 ;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*  hero section style */
+
+.hero-section{
+
+    max-width: 100vw;
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.hero-para h1{
+    font-size: 2.50rem;
+    font-weight: 800;
+}
+.hero-para :nth-child(4){
+    color: gold;
+}
+.right-hero-image{
+   margin-left: 40px;
+}
+
+
+/* projects sections */
+
+
+.para-project{
+    display: flex;
+    justify-content: center;
+ text-align: center;
+ font-size: 1.5rem;
+ margin-block: 50px;
+ text-decoration: underline blue ;
+}
+
+
+ .project-list{
+   
+    display: grid;  
+    grid-template-columns: 100px 100px;
+    column-gap: 350px;
+    justify-content: center;
+    align-items: center;
+    
+   
+} 
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer-sections */
+
+
+.link-contect a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-decoration: underline blue;
+   
+}
+
+.sub-footer{
+    text-align: center;
+   
+    padding: 20px 0px 0px;
+   
+
+}
+
+
+
+/* media query */
+
+
+@media screen  and (max-width : 576px) {
+
+    ul li{
+        display: none;
+    }
+    
+    .ult-menu{
+        display: block;
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-hero-image{
+        width: 80px;
+        margin-right: 400px;
+        margin-top: 40px;
+    }
+
+    .para-project h2{
+     flex-wrap: wrap;
+    }
+
+    
+    .project-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .project img{
+        width: 60vw;
+    }
+     
+    }
